@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: MicrogrammaDOTBolExt, sans-serif;
 }
 section {
   background: #fffaf0;
@@ -17,7 +18,7 @@ section {
   position: relative;
 }
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -25,6 +26,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
+  z-index: 100000;
+}
+header.sticky {
+  padding: 10px 100px;
+  background: #fffaf0;
 }
 header .logo {
   position: relative;
@@ -33,6 +40,8 @@ header .logo {
 header ul {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header ul li {
   list-style: none;
@@ -55,7 +64,7 @@ header ul li a {
 }
 header ul li a:hover {
   /* color: #00ebc7; */
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-position: -100%;
   /* transition: all 0.3s ease; */
 }
@@ -75,6 +84,7 @@ header ul li a:hover {
   font-size: 14em;
   line-height: 1.5em;
   font-weight: 800;
+  font-family: MicrogrammaDOTBolExt, sans-serif;
   /* background: linear-gradient(to right, #ccc 50%, #875bde 50%, #662fd4);
   background-size: 200%;
   -webkit-background-clip: text;
@@ -90,6 +100,7 @@ header ul li a:hover {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.1em;
+  font-family: MicrogrammaDOTBolExt, sans-serif;
 }
 .content .imgBox {
   width: 600px;
@@ -101,3 +112,44 @@ header ul li a:hover {
 .content .imgBox img {
   max-width: 800px;
 }
+/* .circle {
+  position: relative;
+  width: 501px;
+  height: 501px;
+   left: 1051px;
+  top: 213px; 
+  top: 0;
+  right: 0;
+  border-radius: 100%;
+  background: #00ebc7;
+} 
+
+/* Polygon 1
+
+position: absolute;
+width: 511px;
+height: 443px;
+left: 1003px;
+top: 581px;
+
+background: rgba(135, 91, 222, 0.6);
+
+Ellipse 9
+
+position: absolute;
+width: 501px;
+height: 501px;
+left: 1051px;
+top: 213px;
+
+background: #00ebc7;
+
+Ellipse 10
+
+position: absolute;
+width: 501px;
+height: 501px;
+left: -54px;
+top: 390px;
+
+background: rgba(0, 235, 199, 0.41); */
