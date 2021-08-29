@@ -104,6 +104,7 @@ header ul li a:hover {
 }
 .content .imgBox {
   width: 600px;
+  max-width: 600px;
   display: flex;
   justify-content: flex-end;
   padding-right: 50px;
@@ -153,3 +154,19 @@ left: -54px;
 top: 390px;
 
 background: rgba(0, 235, 199, 0.41); */
+.about {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.about .textBox h1 {
+  color: #875bde;
+  font-size: 14em;
+  line-height: 1.5em;
+  font-weight: 800;
+  font-family: MicrogrammaDOTBolExt, sans-serif;
+  right: 0px;
+}
